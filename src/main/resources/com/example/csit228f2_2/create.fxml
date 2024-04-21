@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="createpane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csit228f2_2.RegisterController">
+   <children>
+      <VBox alignment="CENTER_LEFT" prefHeight="425.0" prefWidth="600.0" styleClass="blue-pane" stylesheets="@styles.css">
+          <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="550.0" text="Task Listener" textAlignment="CENTER" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="60.0" />
+               </font></Label>
+              <Label text="Sign Up" textFill="WHITE">
+                  <font>
+                      <Font size="20.0" />
+                  </font>
+                  <VBox.margin>
+                      <Insets left="20.0" />
+                  </VBox.margin>
+              </Label>
+              <HBox prefHeight="20.0" prefWidth="200.0">
+                  <children>
+                      <TextField id="tf_email" fx:id="tfemail" promptText="Email" stylesheets="@styles.css" HBox.hgrow="ALWAYS">
+                          <HBox.margin>
+                              <Insets left="15.0" right="15.0" top="15.0" />
+                          </HBox.margin>
+                      </TextField>
+                  </children>
+              </HBox>
+              <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@styles.css">
+                  <children>
+                      <TextField id="tf_username" fx:id="tfusername" promptText="Username" styleClass="tf_box" stylesheets="@styles.css" HBox.hgrow="ALWAYS">
+                          <HBox.margin>
+                              <Insets left="15.0" right="15.0" top="15.0" />
+                          </HBox.margin>
+                  </TextField>
+                  </children>
+                  <VBox.margin>
+                      <Insets />
+                  </VBox.margin>
+            </HBox>
+              <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@styles.css">
+                  <children>
+                      <TextField id="tf_password" fx:id="pfpassword" promptText="Password" stylesheets="@styles.css" HBox.hgrow="ALWAYS">
+                          <HBox.margin>
+                              <Insets left="15.0" right="15.0" top="15.0" />
+                          </HBox.margin>
+                      </TextField>
+                  </children>
+              </HBox>
+              <Button mnemonicParsing="false" onAction="#onCreate" text="Submit">
+                  <VBox.margin>
+                      <Insets left="15.0" right="15.0" top="15.0" />
+                  </VBox.margin>
+            </Button>
+          </children>
+      </VBox>
+   </children>
+</AnchorPane>

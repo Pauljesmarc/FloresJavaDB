@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="landingPage" prefHeight="400.0" prefWidth="600.0" styleClass="blue-pane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csit228f2_2.MainController">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="425.0" prefWidth="600.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="600.0" text="Your To Do LIst">
+                    <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                    </font></Label>
+                <HBox alignment="CENTER_LEFT" prefHeight="354.0" prefWidth="600.0">
+                    <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="353.0" prefWidth="300.0">
+                            <children>
+                                <Label text="What you want to do?">
+                                    <font>
+                                        <Font name="System Italic" size="20.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <TextField fx:id="addTaskTF" promptText="Enter Task to be Added">
+                                    <VBox.margin>
+                                        <Insets left="20.0" right="15.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <Button mnemonicParsing="false" onAction="#addTask" text=" Add Task" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="7.0" />
+                                    </VBox.margin>
+                                </Button>
+                        <TextField fx:id="deleteTaskTF" promptText="Enter task to be Deleted">
+                           <VBox.margin>
+                              <Insets left="20.0" right="15.0" />
+                           </VBox.margin>
+                        </TextField>
+                                <Button mnemonicParsing="false" onAction="#deleteTask" text="Delete Task" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="12.0" top="7.0" />
+                                    </VBox.margin>
+                                </Button>
+                        <TextField fx:id="toBeUpdatedTaskTF" promptText="Enter Task to be Updated">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="20.0" right="15.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="newTaskTF" promptText="Enter new Task">
+                           <VBox.margin>
+                              <Insets left="20.0" right="15.0" />
+                           </VBox.margin>
+                        </TextField>
+                                <Button mnemonicParsing="false" onAction="#updateTask" text="Update Task" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="7.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#exitApp" text="Exit">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                                </Button>
+                            </children></VBox>
+                        <VBox prefHeight="353.0" prefWidth="300.0">
+                     <children>
+                        <TableView fx:id="tasktable" prefHeight="354.0" prefWidth="300.0">
+                          <columns>
+                            <TableColumn fx:id="taskColoumn" prefWidth="288.0" text="Ongoing Tasks" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets bottom="10.0" right="10.0" />
+                           </VBox.margin>
+                        </TableView>
+                     </children></VBox>
+                    </children>
+                </HBox>
+            </children></VBox>
+    </children>
+</AnchorPane>
